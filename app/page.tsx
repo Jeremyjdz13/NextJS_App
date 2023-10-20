@@ -3,9 +3,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import ProductCard from './components/ProductCard/ProductCard'
 import { getServerSession } from 'next-auth'
-import { authOptions } from './api/auth/[...nextauth]/route'
 import LibbyNDaddy from '@/public/images/LibbyNDaddy.jpg'
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
@@ -45,7 +43,6 @@ export default function Home() {
       }}>Show Users</button>
       
       {isVisible &&  <HeavyComponent />}
-      {/* <ProductCard /> */}
       {/* <Image 
         src={LibbyNDaddy} 
         alt='Libby and Daddy' 
